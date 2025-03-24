@@ -1,0 +1,23 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DataSourceManager"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+DataSourceManager="*res://addons/data_source_manager/data_source_manager.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/data_source_manager/plugin.cfg")
